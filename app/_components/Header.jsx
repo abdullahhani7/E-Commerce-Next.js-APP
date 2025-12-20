@@ -1,13 +1,24 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { LayoutGrid, Search, ShoppingBag } from "lucide-react";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
+import Api from "../_utils/Api";
 
 const Header = () => {
+  useEffect(() => {
+    getCategoryList();
+  }, []);
+  const getCategoryList = () => {
+    Api.getCategory().then((res) => {
+      console.log(res.data.data);
+    });
+  };
   return (
     <div className="shadow-md flex justify-between p-2">
       <div className="flex items-center gap-8">
-        <Image width={100} height={100} src="/logo.png" alt="logo" />
+        <Image width={100} height={100} src="/logo.png" alt="logo" priority />
 
         <h2 className="flex gap-2 items-center border p-2 rounded-full bg-slate-200">
           <LayoutGrid />
