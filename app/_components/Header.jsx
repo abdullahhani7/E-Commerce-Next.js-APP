@@ -45,7 +45,7 @@ const Header = () => {
             {category.map((cat) => (
               <DropdownMenuItem key={cat.id}>
                 <Image
-                  src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${cat?.icon?.[0].url}`}
+                  src={cat?.icon?.[0].url}
                   width={23}
                   height={23}
                   alt=""

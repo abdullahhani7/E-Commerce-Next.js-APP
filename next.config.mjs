@@ -2,7 +2,7 @@
 const nextConfig = {
   /* config options here */
   images: {
-    domains: ["localhost"],
+    domains: ['res.cloudinary.com'],
   },
 };
 

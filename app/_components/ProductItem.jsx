@@ -5,7 +5,7 @@ const ProductItem = ({ product }) => {
   return (
     <div className="p-2 md:p-6 flex flex-col items-center justify-center gap-3 border rounded-lg cursor-pointer hover:scale-105 hover:shadow-md transition-all">
       <Image
-        src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${product?.image?.[0].url}`}
+        src={product?.image?.[0].url}
         width={300}
         height={500}
         alt=""

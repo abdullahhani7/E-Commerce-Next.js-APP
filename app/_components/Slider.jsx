@@ -15,7 +15,7 @@ const Slider = ({ sliderList }) => {
         {sliderList.map((slider, index) => (
           <CarouselItem key={index}>
             <Image
-              src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${slider?.image?.[0].url}`}
+              src={slider?.image?.[0].url}
               width={1000}
               height={400}
               alt=""
