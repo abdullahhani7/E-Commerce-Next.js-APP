@@ -54,7 +54,10 @@ const Header = () => {
                 {/* {console.log(
                   `${process.env.NEXT_PUBLIC_STRAPI_URL}${cat?.icon?.[0].url}`
                 )} */}
+                <p className="cursor-pointer text-lg">
+
                 {cat.name}
+                </p>
               </DropdownMenuItem>
             ))}
           </DropdownMenuContent>

@@ -1,10 +1,14 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Slider from "./_components/Slider";
+import Api from "./_utils/Api";
 
-export default function Home() {
+export default async function Home() {
+  const sliderList = await Api.getSlider();
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <Button>ADD</Button>
+    <div>
+      <Slider sliderList={sliderList} />
     </div>
   );
 }
