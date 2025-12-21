@@ -43,7 +43,19 @@ const Header = () => {
             <DropdownMenuLabel>Browse Category</DropdownMenuLabel>
             <DropdownMenuSeparator />
             {category.map((cat) => (
-              <DropdownMenuItem key={cat.id}>{cat.name}</DropdownMenuItem>
+              <DropdownMenuItem key={cat.id}>
+                <Image
+                  src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${cat?.icon?.[0].url}`}
+                  width={23}
+                  height={23}
+                  alt=""
+                  className="rounded-full"
+                />
+                {/* {console.log(
+                  `${process.env.NEXT_PUBLIC_STRAPI_URL}${cat?.icon?.[0].url}`
+                )} */}
+                {cat.name}
+              </DropdownMenuItem>
             ))}
           </DropdownMenuContent>
         </DropdownMenu>
