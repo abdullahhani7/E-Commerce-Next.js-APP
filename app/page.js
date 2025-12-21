@@ -4,6 +4,7 @@ import Slider from "./_components/Slider";
 import Api from "./_utils/Api";
 import CategoryList from "./_components/CategoryList";
 import ProductsList from "./_components/ProductsList";
+import Footer from "./_components/Footer";
 
 export default async function Home() {
   const sliderList = await Api.getSlider();
@@ -19,6 +20,15 @@ export default async function Home() {
       <Slider sliderList={sliderList} />
       <CategoryList categoryList={categoryList} />
       <ProductsList productsList={productsList} />
+      <Image
+        src="/footerImg.png"
+        width={1000}
+        height={300}
+        alt="icon"
+        layout="responsive"
+        className="mt-8"
+      />
+      <Footer />
     </div>
   );
 }
