@@ -5,9 +5,11 @@ import Api from "./_utils/Api";
 
 export default async function Home() {
   const sliderList = await Api.getSlider();
+  console.log(sliderList);
+  
 
   return (
-    <div>
+    <div className="p-10 px-16">
       <Slider sliderList={sliderList} />
     </div>
   );
