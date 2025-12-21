@@ -13,7 +13,7 @@ function Footer() {
           </p>
 
           <Button
-            href=""
+            href={null}
             className="mt-8 inline-flex items-center justify-center rounded-full  border px-12 py-3 text-sm font-medium text-black bg-amber-500 hover:bg-amber-600 hover:text-dark focus:ring-3 focus:outline-hidden"
           >
             Get Started
@@ -24,7 +24,7 @@ function Footer() {
           <ul className="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
             <li>
               <a
-                href=""
+                href={null}
                 className="text-gray-500 transition hover:opacity-75 dark:text-gray-400"
               >
                 Terms & Conditions
@@ -33,7 +33,7 @@ function Footer() {
 
             <li>
               <a
-                href=""
+                href={null}
                 className="text-gray-500 transition hover:opacity-75 dark:text-gray-400"
               >
                 Privacy Policy
@@ -42,7 +42,7 @@ function Footer() {
 
             <li>
               <a
-                href=""
+                href={null}
                 className="text-gray-500 transition hover:opacity-75 dark:text-gray-400"
               >
                 Cookies
@@ -53,7 +53,7 @@ function Footer() {
           <ul className="mt-8 flex justify-center gap-6 sm:mt-0 lg:justify-end">
             <li>
               <a
-                href=""
+                href={null}
                 rel="noreferrer"
                 target="_blank"
                 className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
@@ -77,7 +77,7 @@ function Footer() {
 
             <li>
               <a
-                href=""
+                href={null}
                 rel="noreferrer"
                 target="_blank"
                 className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
@@ -101,7 +101,7 @@ function Footer() {
 
             <li>
               <a
-                href=""
+                href={null}
                 rel="noreferrer"
                 target="_blank"
                 className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
@@ -121,7 +121,7 @@ function Footer() {
 
             <li>
               <a
-                href=""
+                href={null}
                 rel="noreferrer"
                 target="_blank"
                 className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
@@ -145,7 +145,7 @@ function Footer() {
 
             <li>
               <a
-                href=""
+                href={null}
                 rel="noreferrer"
                 target="_blank"
                 className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
