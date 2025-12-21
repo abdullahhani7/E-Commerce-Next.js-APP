@@ -11,7 +11,13 @@ const getSlider = () =>
     return resp.data.data;
   });
 
+const getCategoryList = () =>
+  axiosGlobal.get("/categories?populate=*").then((resp) => {
+    return resp.data.data;
+  });
+
 export default {
   getCategory,
   getSlider,
+  getCategoryList,
 };
