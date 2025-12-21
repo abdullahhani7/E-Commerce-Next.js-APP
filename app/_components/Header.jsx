@@ -69,7 +69,7 @@ const Header = () => {
         <h2 className="flex gap-2 items-center">
           <ShoppingBag /> 0
         </h2>
-        <Button>Login</Button>
+        <Button className="text-black bg-amber-500 hover:bg-amber-600">Login</Button>
       </div>
     </div>
   );
