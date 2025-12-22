@@ -30,17 +30,16 @@ const ProductItem = ({ product }) => {
       </div>
 
       <Dialog>
-        <DialogTrigger>
+        <DialogTrigger asChild>
           <Button className="text-black bg-amber-500 hover:bg-amber-600">
             Add To Cart
           </Button>
         </DialogTrigger>
         <DialogContent>
           <DialogHeader>
-            <DialogDescription>
-              <ProductDetail product={product} />
-            </DialogDescription>
+            <DialogTitle className="font-bold">Product Details</DialogTitle>
           </DialogHeader>
+          <ProductDetail product={product} />
         </DialogContent>
       </Dialog>
     </div>
