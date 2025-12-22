@@ -4,7 +4,7 @@ import Image from "next/image";
 function Footer() {
   return (
     <footer className="bg-slate-100 dark:bg-gray-900 mt-10">
-      <div className="mx-auto max-w-7xl px-4 pt-16 pb-8 sm:px-6 lg:px-8 lg:pt-24">
+      <div className="mx-auto max-w-7xl px-4 pt-16 pb-4 sm:px-6 lg:px-8 lg:pt-20">
         <div className="text-center flex flex-col items-center justify-center ">
           <Image src="/logo.png" width={150} height={150} alt="icon" />
 
