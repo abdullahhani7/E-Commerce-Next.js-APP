@@ -23,10 +23,14 @@ const ProductDetail = ({ product }) => {
             <h2>1</h2>
             <button>+</button>
           </div>
-          <Button className="flex gap-3 mt-5">
+          <Button className="text-black bg-amber-500 hover:bg-amber-600 flex gap-3 mt-5">
             <ShoppingBasket /> Add To Cart
           </Button>
         </div>
+        <h2>
+          <span className="font-bold text-[#ffcc00]">Category:</span>{" "}
+          {product.categories[0].name}
+        </h2>
       </div>
     </div>
   );
