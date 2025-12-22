@@ -13,7 +13,7 @@ export default async function Home() {
   // console.log("categoryList", categoryList);
 
   const productsList = await Api.getProductsList();
-  console.log("productsList", productsList);
+  // console.log("productsList", productsList);
 
   return (
     <div className="p-10 px-16">
