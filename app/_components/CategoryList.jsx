@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const CategoryList = ({ categoryList }) => {
@@ -7,7 +8,8 @@ const CategoryList = ({ categoryList }) => {
       <h2 className="font-bold text-2xl text-amber-500">Shop By Catgory</h2>
       <div className="gap-10 md:gap-0 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6  justify-items-center items-center mt-5">
         {categoryList.map((cat, index) => (
-          <div
+          <Link
+            href={`/products-category/${cat.name}`}
             key={index}
             className="w-30 h-35 mt-3  bg-amber-100  p-3 flex flex-col items-center text-center group"
           >
@@ -18,8 +20,10 @@ const CategoryList = ({ categoryList }) => {
               alt=""
               className="rounded-full  hover:scale-125 transition-all cursor-pointer"
             />
-            <p className="text-amber-500 font-bold capitalize">{cat?.name}</p>
-          </div>
+            <small className="text-amber-500 font-bold capitalize">
+              {cat?.name}
+            </small>
+          </Link>
         ))}
       </div>
     </div>
