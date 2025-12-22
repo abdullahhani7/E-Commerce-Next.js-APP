@@ -20,7 +20,11 @@ const TopCategoryList = ({ categoryList, selectedCategory }) => {
             alt=""
             className="rounded-full  hover:scale-125 transition-all cursor-pointer"
           />
-          <small className="text-amber-500 font-bold capitalize">
+          <small
+            className={`text-amber-500 font-bold capitalize ${
+              selectedCategory === cat.name && "bg-[#ffcc00] text-white"
+            }`}
+          >
             {cat?.name}
           </small>
         </Link>
