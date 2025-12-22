@@ -1,9 +1,16 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { ShoppingBasket } from "lucide-react";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 const ProductDetail = ({ product }) => {
+  const [productTotalPrice, setProductTotalPrice] = useState(
+    product.sellingPrice ? product.sellingPrice : product.realPrice
+  );
+
+  const [quantity, setQuantity] = useState(1);
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2">
       <Image src={product?.image?.[0].url} width={300} height={300} alt="img" />
@@ -18,10 +25,20 @@ const ProductDetail = ({ product }) => {
         </div>
 
         <div className="flex flex-col items-baseline">
-          <div className="flex gap-10 border p-3 items-center">
-            <button>-</button>
-            <h2>1</h2>
-            <button>+</button>
+          <div className="flex gap-3 items-center">
+            <div className="flex gap-10 border p-3 items-center">
+              <button
+                disabled={quantity == 1}
+                onClick={() => setQuantity(quantity - 1)}
+              >
+                -
+              </button>
+              <h2>{quantity}</h2>
+              <button onClick={() => setQuantity(quantity + 1)}>+</button>
+            </div>
+            <h2 className="  font-bold ">
+              {(productTotalPrice * quantity).toFixed(2)} $
+            </h2>
           </div>
           <Button className="text-black bg-amber-500 hover:bg-amber-600 flex gap-3 mt-5">
             <ShoppingBasket /> Add To Cart
