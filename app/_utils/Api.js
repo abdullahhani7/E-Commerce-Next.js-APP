@@ -28,10 +28,24 @@ const getProductsByCategory = (category) =>
       return resp.data.data;
     });
 
+const registerUser = (username, email, password) =>
+  axiosGlobal.post("/auth/local/register", {
+    username,
+    email,
+    password,
+  });
+const signIn = (email, password) =>
+  axiosGlobal.post("/auth/local", {
+    identifier: email,
+    password,
+  });
+
 export default {
   getCategory,
   getSlider,
   getCategoryList,
   getProductsList,
   getProductsByCategory,
+  registerUser,
+  signIn,
 };
