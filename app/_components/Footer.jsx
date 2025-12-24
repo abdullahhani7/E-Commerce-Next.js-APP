@@ -14,7 +14,7 @@ function Footer() {
 
           <Button
             href={null}
-            className="mt-8 inline-flex items-center justify-center rounded-full  border px-12 py-3 text-sm font-medium text-black bg-amber-500 hover:bg-amber-600 hover:text-dark focus:ring-3 focus:outline-hidden"
+            className="mt-8 inline-flex items-center justify-center rounded-full  border px-12 py-3 text-sm font-medium text-black   hover:text-dark focus:ring-3 focus:outline-hidden"
           >
             Get Started
           </Button>

@@ -31,7 +31,7 @@ const ProductItem = ({ product }) => {
 
       <Dialog>
         <DialogTrigger asChild>
-          <Button className="text-black bg-amber-500 hover:bg-amber-600">
+          <Button className="text-black ">
             Add To Cart
           </Button>
         </DialogTrigger>

@@ -40,7 +40,7 @@ const ProductDetail = ({ product }) => {
               {(productTotalPrice * quantity).toFixed(2)} $
             </h2>
           </div>
-          <Button className="text-black bg-amber-500 hover:bg-amber-600 flex gap-3 mt-5">
+          <Button className="text-black flex gap-3 mt-5">
             <ShoppingBasket /> Add To Cart
           </Button>
         </div>
